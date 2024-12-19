@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda felvétele</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light px-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/lemez.png" alt="Logo" class="logo">
+            </a>
+          <div class="dropdown" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Banda felvétele</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fooldal.html">Bandáink</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container">
+        <form action="fooldal.html">
+        <p>Banda információk:</p>
+        <section>
+            <label for="banda">Banda neve:</label><br>
+            <input type="text" id="banda" class="banda" placeholder="Pl: Imagine dragons"><br>
+
+            <label for="bandatag">Hány tagból áll a banda?</label><br>
+            <label for="egy">1</label>
+            <input type="radio" name="bandatag" id="egy">
+            <label for="ketto">2</label>
+            <input type="radio" name="bandatag" id="ketto">
+            <label for="harom">3</label>
+            <input type="radio" name="bandatag" id="harom">
+            <label for="negy">4</label>
+            <input type="radio" name="bandatag" id="negy"><br>
+
+            <label for="tagok">Nevezd meg őket</label><br>
+            <input type="text" id="tagok" class="tag" placeholder="Pl: Dan Reynolds">
+            <input type="text" id="tagok" class="tag" placeholder="Pl: Ben McKee">
+            <input type="text" id="tagok" class="tag" placeholder="Pl: Wayne Sermon">
+            <input type="text" id="tagok" class="tag" placeholder="Pl: Daniel Platzman">
+            <br>
+
+            <label for="zene">Milyen fajta zenét játszanak?</label><br>
+            <input type="checkbox" name="pop" id="pop">
+            <label for="pop" class="zenetipus">Pop</label>
+            <input type="checkbox" name="rock" id="rock">
+            <label for="rock" class="zenetipus">Rock</label>
+            <input type="checkbox" name="indie" id="indie">
+            <label for="indie" class="zenetipus">Indie</label>
+            <input type="checkbox" name="hiphop" id="hiphop">
+            <label for="hiphop" class="zenetipus">Hiphop</label>
+            <input type="checkbox" name="Jazz" id="Jazz">
+            <label for="jazz" class="zenetipus">Jazz</label>
+            <input type="checkbox" name="klasszikus" id="klasszikus">
+            <label for="klasszikus">Klasszikus</label>
+        </section>
+        <p>Album információk</p>
+        <section>
+            <label for="album">Mi az album neve?</label><br>
+            <input type="text" class="album" id="album" placeholder="Pl: Evolve"><br>
+            <label for="album">Hány zene van az albumban?</label><br>
+            <input type="number" class="album2" id="album" min="5" max="50" value="8"><br>
+            <label for="album">Mikor adták ki?</label><br>
+            <input type="number" class="album2" id="album" value="2000" max="2024" min="1960"><br>
+        </section>
+        <p>Személyes információk</p>
+        <section>
+            <label for="nev">Hogy hívnak?</label><br>
+            <input type="text" id="nev" class="nev" placeholder="Pl: Kiss Béla"><br>
+
+            <label for="rating">Egy egytől tízig tartó skálán hányasra értékelnéd az oldalt?</label><br>
+            <label for="rating" class="egy">1</label><input type="range" name="rating" id="rating" min="1" max="10" value="5" class="slider"><label for="rating" class="tiz">10</label><br>
+            <label for="reason">Miért ezt a bandát szeretnéd látni az oldalon?</label><br>
+            <textarea name="reason" id="reason" class="reason"></textarea>
+        </section>
+    <button type="submit" class="kuldes">Küldés</button>
+    </form>
+
+</main>
+
+</body>
+</html>

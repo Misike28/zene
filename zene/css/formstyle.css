@@ -1,0 +1,128 @@
+nav{
+    background-color: gray;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+.nav-link{
+    color: white;
+    font-size: 20pt;
+}
+nav{
+    background-color: gray;
+}
+body{
+    background-color: wheat;
+}
+section{
+    border: solid 1px black;
+    padding: 10px;
+    margin-top:0px ;
+    margin-bottom: 30px;
+    background-color: wheat;
+}
+p{
+    margin-bottom: 0px;
+}
+input{
+    margin-bottom:20px ;
+}
+.nev{
+    width: 40%;
+}
+input[type=radio]{
+    margin-right: 50px;
+    margin-left: 10px;
+    transform: scale(1.5); 
+}
+.tag{
+    width: 200px;
+    margin-right: 25px;
+}
+input[type=checkbox]{
+    transform: scale(1.5); 
+}
+.zenetipus{
+    margin-right: 50px;
+    margin-left: 10px;
+}
+.album{
+    width: 450px;
+}
+.album2{
+    width: 100px;
+}
+.egy{
+    margin-right: 10px;
+}
+.tiz{
+    margin-left: 10px;
+}
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 300px;
+    height: 1px; 
+    background: #d3d3d3; 
+    outline: none;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px;
+    height: 25px; 
+    border-radius:90px ;
+    background: #ff0000;
+    cursor: pointer;
+}
+.reason{
+    width: 500px;
+    height: 150px;
+}
+.kuldes{
+    height: 50px;
+    width: 125px;
+    border-radius: 90px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+@media only screen and (max-width: 600px) {
+    .tag{
+        display: block;
+    }
+    input[type=radio]{
+        margin-right: 30px;
+        margin-left: 5px;
+        transform: scale(1.5); 
+    }
+    .reason{
+        width: 300px;
+        height: 150px;
+    }
+    .nev{
+        width: 300px;
+    }
+    .album{
+        width: 300px;
+    }
+    nav{
+        background-color: gray;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+    }
+    .dropdown{
+        display: block;
+    }
+}
